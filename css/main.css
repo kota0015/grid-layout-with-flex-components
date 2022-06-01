@@ -9,13 +9,24 @@ body {
   border: 1px solid #222;
   border-radius: 8px;
   padding: 1rem;
+  
+  display:flex;
+  flex-direction: column;
+  
+  justify-content:center;
+  align-items: center ;
+  
 }
 
 .emoji h2 {
   margin: 0;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 3px solid #ccc;
   width: 100%;
   
+}
+.emoji p{
+  flex-grow: 1;
+
 }
 
 .emoji a {
@@ -24,40 +35,18 @@ body {
   color: white;
   padding: 1rem;
   border-radius: 8px;
-  margin-top: auto;
-    width: 100%;
-    margin-left: 5px;
-    text-align: center;
+  text-align: left;
+  align-self: center; 
+  margin-top: auto; 
+  width:calc(100% - 2rem) 
+   
 }
 
 .icon {
   font-size: 4rem;
+  order: -1;
 }
 .emojis {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:20px ;
-}
-.emoji {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center ;
- 
-
-}
-.icon{
-    order: -1;
- 
-}
-.emoji a:link{
-    margin-top: auto;
-    width: 50%;
-    margin-left : 0;    
-    width:95%;
-    text-align: left;
-
-}
-
-
-
+    grid-gap:15px ;
